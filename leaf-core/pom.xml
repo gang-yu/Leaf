@@ -8,7 +8,7 @@
     </parent>
     <groupId>com.sankuai.inf.leaf</groupId>
     <artifactId>leaf-core</artifactId>
-    <packaging>jar</packaging>
+<!--    <packaging>jar</packaging>-->
     <version>1.0.1</version>
     <name>leaf-core</name>
     <properties>
@@ -16,7 +16,7 @@
         <commons-io.version>2.4</commons-io.version>
         <log4j.version>2.7</log4j.version>
         <mybatis-spring.version>1.2.5</mybatis-spring.version>
-        <!--不对外发布jar包-->
+        <!-- 不对外发布jar包 -->
         <maven.deploy.skip>true</maven.deploy.skip>
     </properties>
     <dependencies>
