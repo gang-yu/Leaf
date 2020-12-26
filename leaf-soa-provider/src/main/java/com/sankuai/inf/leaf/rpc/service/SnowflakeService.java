@@ -5,7 +5,7 @@ import com.sankuai.inf.leaf.common.PropertyFactory;
 import com.sankuai.inf.leaf.common.Result;
 import com.sankuai.inf.leaf.common.ZeroIDGen;
 import com.sankuai.inf.leaf.rpc.PropertyConstants;
-import com.sankuai.inf.leaf.api.exception.InitException;
+import com.sankuai.inf.leaf.exception.InitException;
 import com.sankuai.inf.leaf.snowflake.SnowflakeIDGenImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

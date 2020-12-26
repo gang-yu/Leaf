@@ -54,7 +54,7 @@
         <mybatis-spring.version>1.2.5</mybatis-spring.version>
         <dubbo-spring-boot-starter.version>0.1.2.RELEASE</dubbo-spring-boot-starter.version>
         <dubbo-registry-redis.version>2.7.8</dubbo-registry-redis.version>
-        <leaf-soa-api.version>1.0.1</leaf-soa-api.version>
+        <leaf-api.version>1.0.1</leaf-api.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -65,9 +65,8 @@
             </dependency>
             <dependency>
                 <groupId>com.sankuai.inf.leaf</groupId>
-                <artifactId>leaf-soa-api</artifactId>
-                <version>${leaf-soa-api.version}</version>
-                <scope>compile</scope>
+                <artifactId>leaf-api</artifactId>
+                <version>${leaf-api.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>

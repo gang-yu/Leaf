@@ -45,6 +45,10 @@
         </dependency>
         <dependency>
             <groupId>com.sankuai.inf.leaf</groupId>
+            <artifactId>leaf-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.sankuai.inf.leaf</groupId>
             <artifactId>leaf-core</artifactId>
         </dependency>
         <dependency>

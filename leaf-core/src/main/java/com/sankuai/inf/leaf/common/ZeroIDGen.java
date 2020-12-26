@@ -1,6 +1,7 @@
 package com.sankuai.inf.leaf.common;
 
 import com.sankuai.inf.leaf.IDGen;
+import com.sankuai.inf.leaf.common.Result;
 
 public class ZeroIDGen implements IDGen {
     @Override

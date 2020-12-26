@@ -30,7 +30,7 @@
         </dependency>
         <dependency>
             <groupId>com.sankuai.inf.leaf</groupId>
-            <artifactId>leaf-soa-api</artifactId>
+            <artifactId>leaf-api</artifactId>
             <scope>compile</scope>
         </dependency>
         <dependency>

@@ -9,7 +9,7 @@ import com.sankuai.inf.leaf.segment.SegmentIDGenImpl;
 import com.sankuai.inf.leaf.segment.dao.IDAllocDao;
 import com.sankuai.inf.leaf.segment.dao.impl.IDAllocDaoImpl;
 import com.sankuai.inf.leaf.rpc.PropertyConstants;
-import com.sankuai.inf.leaf.api.exception.InitException;
+import com.sankuai.inf.leaf.exception.InitException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;

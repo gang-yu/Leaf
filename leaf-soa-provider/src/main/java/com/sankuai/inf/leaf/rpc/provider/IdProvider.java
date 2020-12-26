@@ -1,14 +1,15 @@
-package com.sankuai.inf.leaf.rpc.client;
+package com.sankuai.inf.leaf.rpc.provider;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.sankuai.inf.leaf.api.ILeafKeyGen;
+import com.sankuai.inf.leaf.IIdGetter;
+import com.sankuai.inf.leaf.common.Result;
 import com.sankuai.inf.leaf.rpc.service.SegmentService;
 import com.sankuai.inf.leaf.rpc.service.SnowflakeService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
 @Service
-public class LeafProvider implements ILeafKeyGen {
+public class IdProvider implements IIdGetter {
     @Autowired
     private SegmentService segmentService;
     @Autowired
@@ -16,12 +17,12 @@ public class LeafProvider implements ILeafKeyGen {
 
 
     @Override
-    public String getSegmentId(String key) {
+    public Result getSegmentId(String key) {
         return null;
     }
 
     @Override
-    public String getSnowflakeId(String key) {
+    public Result getSnowflakeId(String key) {
         return null;
     }
 }

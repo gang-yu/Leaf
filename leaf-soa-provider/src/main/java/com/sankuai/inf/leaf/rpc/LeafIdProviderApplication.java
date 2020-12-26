@@ -7,9 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @EnableDubbo
-public class LeafProviderApplication {
+public class LeafIdProviderApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LeafProviderApplication.class, args);
+		SpringApplication.run(LeafIdProviderApplication.class, args);
 	}
 }
