@@ -1,9 +1,12 @@
-package com.sankuai.inf.leaf.provider;
+package com.sankuai.inf.leaf.rpc;
 
+
+import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+@EnableDubbo
 public class LeafProviderApplication {
 
 	public static void main(String[] args) {

@@ -9,8 +9,11 @@
     </parent>
 <!--不需要    <groupId>com.sankuai.inf.leaf</groupId>-->
     <artifactId>leaf-soa-api</artifactId>
-    <version>${project.parent.version}</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
     <name>leaf-soa-api</name>
     <description>Leaf rpc interface</description>
+    <properties>
+        <maven.deploy.skip>false</maven.deploy.skip>
+    </properties>
 </project>

@@ -38,19 +38,23 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <spring.version>4.3.18.RELEASE</spring.version>
-        <junit.version>4.12</junit.version>
         <maven.compiler.version>3.5.1</maven.compiler.version>
-        <mybatis.version>3.3.0</mybatis.version>
+        <spring.version>4.3.18.RELEASE</spring.version>
+        <spring-boot-dependencies.version>1.5.3.RELEASE</spring-boot-dependencies.version>
+        <commons-io.version>2.4</commons-io.version>
+        <junit.version>4.12</junit.version>
         <perf4j.version>0.9.16</perf4j.version>
         <curator.version>2.6.0</curator.version>
         <slf4j.version>1.7.2</slf4j.version>
-        <druid.version>1.1.10</druid.version>
+        <log4j.version>2.7</log4j.version>
         <jackson-databind.version>2.9.6</jackson-databind.version>
         <mysql-connector-java.version>8.0.22</mysql-connector-java.version>
-        <commons-io.version>2.4</commons-io.version>
-        <log4j.version>2.7</log4j.version>
+        <druid.version>1.1.10</druid.version>
+        <mybatis.version>3.3.0</mybatis.version>
         <mybatis-spring.version>1.2.5</mybatis-spring.version>
+        <dubbo-spring-boot-starter.version>0.1.2.RELEASE</dubbo-spring-boot-starter.version>
+        <dubbo-registry-redis.version>2.7.8</dubbo-registry-redis.version>
+        <leaf-soa-api.version>1.0.1</leaf-soa-api.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -60,9 +64,25 @@
                 <version>1.0.1</version>
             </dependency>
             <dependency>
+                <groupId>com.sankuai.inf.leaf</groupId>
+                <artifactId>leaf-soa-api</artifactId>
+                <version>${leaf-soa-api.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid</artifactId>
                 <version>${druid.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.boot</groupId>
+                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <version>${dubbo-spring-boot-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-registry-redis</artifactId>
+                <version>${dubbo-registry-redis.version}</version>
             </dependency>
             <!--zk-->
             <dependency>

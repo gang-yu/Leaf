@@ -1,6 +1,6 @@
 package com.sankuai.inf.leaf.api;
 
-public interface LeafInterface {
+public interface ILeafKey {
 
     public String getSegmentId(String key);
 

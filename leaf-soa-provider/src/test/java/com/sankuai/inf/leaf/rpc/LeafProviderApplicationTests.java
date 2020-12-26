@@ -1,4 +1,4 @@
-package com.sankuai.inf.leaf.provider;
+package com.sankuai.inf.leaf.rpc;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,6 +11,7 @@ public class LeafProviderApplicationTests {
 
 	@Test
 	public void contextLoads() {
+		System.out.println("app statr");
 	}
 
 }
