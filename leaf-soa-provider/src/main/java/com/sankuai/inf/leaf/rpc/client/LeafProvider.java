@@ -1,14 +1,14 @@
-package com.sankuai.inf.leaf.rpc.provider;
+package com.sankuai.inf.leaf.rpc.client;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.sankuai.inf.leaf.api.ILeafKey;
+import com.sankuai.inf.leaf.api.ILeafKeyGen;
 import com.sankuai.inf.leaf.rpc.service.SegmentService;
 import com.sankuai.inf.leaf.rpc.service.SnowflakeService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
 @Service
-public class LeafProvider implements ILeafKey {
+public class LeafProvider implements ILeafKeyGen {
     @Autowired
     private SegmentService segmentService;
     @Autowired

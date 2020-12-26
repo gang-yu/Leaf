@@ -1,6 +1,6 @@
 package com.sankuai.inf.leaf.rpc;
 
-public class Constants {
+public class PropertyConstants {
     public static final String LEAF_SEGMENT_ENABLE = "leaf.segment.enable";
     public static final String LEAF_JDBC_URL = "leaf.jdbc.url";
     public static final String LEAF_JDBC_USERNAME = "leaf.jdbc.username";
