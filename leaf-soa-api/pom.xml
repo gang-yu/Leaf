@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.sankuai.inf.leaf</groupId>
+        <artifactId>leaf-parent</artifactId>
+        <version>1.0.1</version>
+    </parent>
+<!--不需要    <groupId>com.sankuai.inf.leaf</groupId>-->
+    <artifactId>leaf-soa-api</artifactId>
+    <version>${project.parent.version}</version>
+    <packaging>jar</packaging>
+    <name>leaf-soa-api</name>
+    <description>Leaf rpc interface</description>
+</project>
