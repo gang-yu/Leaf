@@ -1,10 +1,12 @@
 package com.sankuai.inf.leaf.rpc.controller;
 
-import com.sankuai.inf.leaf.api.ILeafKeyGen;
-import com.sankuai.inf.leaf.api.common.Result;
-import com.sankuai.inf.leaf.api.exception.LeafServerException;
-import com.sankuai.inf.leaf.api.exception.NoKeyException;
-import com.sankuai.inf.leaf.api.common.Status;
+import com.alibaba.dubbo.config.annotation.Reference;
+import com.sankuai.inf.leaf.IIdGetter;
+import com.sankuai.inf.leaf.common.Result;
+import com.sankuai.inf.leaf.exception.LeafServerException;
+import com.sankuai.inf.leaf.exception.NoKeyException;
+import com.sankuai.inf.leaf.common.Status;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,17 +18,17 @@ import org.springframework.web.bind.annotation.RestController;
 public class LeafController {
     private Logger logger = LoggerFactory.getLogger(LeafController.class);
 
-    @Autowired
-    ILeafKeyGen leafKey;
+    @Reference
+    IIdGetter idGetter;
 
     @RequestMapping(value = "/api/segment/get/{key}")
     public String getSegmentId(@PathVariable("key") String key) {
-        return get(key, leafKey.getSegmentId(key));
+        return get(key, idGetter.getSegmentId(key));
     }
 
     @RequestMapping(value = "/api/snowflake/get/{key}")
     public String getSnowflakeId(@PathVariable("key") String key) {
-        return get(key, leafKey.getSnowflakeId(key));
+        return get(key, idGetter.getSnowflakeId(key));
     }
 
     private String get(@PathVariable("key") String key, Result id) {

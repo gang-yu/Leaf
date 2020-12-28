@@ -18,11 +18,11 @@ public class IdProvider implements IIdGetter {
 
     @Override
     public Result getSegmentId(String key) {
-        return null;
+        return segmentService.getId(key);
     }
 
     @Override
     public Result getSnowflakeId(String key) {
-        return null;
+        return snowflakeService.getId(key);
     }
 }
